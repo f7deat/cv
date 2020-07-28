@@ -1,0 +1,28 @@
+.timeline {
+    position: relative;
+    min-height: 250px;
+.timeline-item {
+    position: relative;
+    width: 100%;
+    .timeline-body {
+        position: absolute;
+    }
+    .timeline-icon {
+        padding: 0.875rem;
+        color: #ffffff;
+        border-radius: 50%;
+        position: absolute;
+        top: 150px;
+    }
+}
+}
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 200px;
+    left: 0;
+    height: 5px;
+    width: 100%;
+    background: #d8e5ee;
+    z-index: -1;
+}

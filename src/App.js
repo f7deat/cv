@@ -1,24 +1,33 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './css/app.scss';
+import Navbar from './components/navbar';
+import Menu from './components/menu';
+import RightBar from './components/sidebars/rightbar';
+import LeftBar from './components/sidebars/leftbar';
+import Content from './components/content';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="row mx-0 h-100">
+      <div className="col-md-1 h-100 bg-light d-none d-md-block">
+        <Menu />
+      </div>
+      <div className="col-md-2 border-right">
+        <LeftBar />
+      </div>
+      <div className="col-md-9">
+        <Navbar />
+        <div className="p-4">
+          <div className="row">
+            <div className="col-md-9">
+              <Content />
+            </div>
+            <div className="col-md-3">
+              <RightBar />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

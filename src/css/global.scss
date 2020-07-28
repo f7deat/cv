@@ -1,0 +1,16 @@
+$text-dark: #172b4d;
+body {
+    color: $text-dark;
+}
+a, .btn-link {
+  color: $text-dark;
+}
+.icon-2x {
+    font-size: 2rem;
+}
+.object-fit-cover {
+    object-fit: cover;
+}
+.icon-1r {
+    font-size: 1.5rem;
+}
