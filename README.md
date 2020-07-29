@@ -4,7 +4,7 @@
 
 ### Screenshoot
 
-![f7deat cv](https://i.imgur.com/upyqeap.png)
+![f7deat cv](https://i.imgur.com/sRM83kT.png)
 
 ### Package
 
@@ -12,6 +12,7 @@
 - [Node-Sass](https://github.com/sass/node-sass)
 - [Bootstrap](https://getbootstrap.com/)
 - [JQuery](https://jquery.com/)
+- [React-Router-DOM](https://reactrouter.com/web/guides/quick-start)
 
 ### Sponsor
 
