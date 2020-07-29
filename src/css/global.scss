@@ -14,3 +14,9 @@ a, .btn-link {
 .icon-1r {
     font-size: 1.5rem;
 }
+.hoverable {
+    cursor: pointer;
+}
+.hoverable:hover {
+    color: darkblue;
+}

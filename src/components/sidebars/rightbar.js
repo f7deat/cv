@@ -5,86 +5,27 @@ import DeveloperHighlights from './rights/highlights';
 import OverallThoughts from './rights/thoughts';
 import OverallExperience from './rights/overallexperience';
 import Notes from './rights/notes';
-import { RiUserHeartLine, RiArrowDownLine, RiCodeSSlashLine,
-    RiChat3Line, RiMedal2Line, RiStickyNote2Line } from "react-icons/ri";
-import { IconContext } from 'react-icons';
+import {
+    RiUserHeartLine, RiCodeSSlashLine,
+    RiChat3Line, RiMedal2Line, RiStickyNote2Line
+} from "react-icons/ri";
 
 export default class RightBar extends React.Component {
     render() {
         return (
             <div className="collapsed">
-                <Overall title="Bio" Component={<Bio/>} icon={<RiUserHeartLine/>} isShow={true}/>
-                <div className="collapsed-item mt-4">
-                    <div className="collapsed-title pt-4 pb-1 d-flex align-items-center border-bottom">
-                        <h2 className="font-weight-bold h4 flex-grow-1">
-                            <IconContext.Provider value={{ className: "icon-1r mr-2" }}>
-                                <RiCodeSSlashLine />
-                            </IconContext.Provider>
-                            Developer Highlights
-                        </h2>
-                        <button className="btn btn-link p-0">
-                            <IconContext.Provider value={{ className: "icon-1r" }}>
-                                <RiArrowDownLine />
-                            </IconContext.Provider>
-                        </button>
-                    </div>
-                    <div className="collapsed-body">
-                        <DeveloperHighlights />
-                    </div>
+                <Overall title="Bio" Component={<Bio />} icon={<RiUserHeartLine />} isShow={true} id="collapseBio" />
+                <div className="mt-4">
+                    <Overall title="Developer Highlights" Component={<DeveloperHighlights />} icon={<RiCodeSSlashLine />} isShow={false} id="collapseHighlights" />
                 </div>
-                <div className="collapsed-item mt-4">
-                    <div className="collapsed-title pt-4 pb-1 d-flex align-items-center border-bottom">
-                        <h2 className="font-weight-bold h4 flex-grow-1">
-                            <IconContext.Provider value={{ className: "icon-1r mr-2" }}>
-                                <RiChat3Line />
-                            </IconContext.Provider>
-                            Overall Thoughts
-                        </h2>
-                        <button className="btn btn-link p-0">
-                            <IconContext.Provider value={{ className: "icon-1r" }}>
-                                <RiArrowDownLine />
-                            </IconContext.Provider>
-                        </button>
-                    </div>
-                    <div className="collapsed-body">
-                        <OverallThoughts />
-                    </div>
+                <div className="mt-4">
+                    <Overall title="Overall Thoughts" Component={<OverallThoughts />} icon={<RiChat3Line />} isShow={false} id="collapseOverallThoughts" />
                 </div>
-                <div className="collapsed-item mt-4">
-                    <div className="collapsed-title pt-4 pb-1 d-flex align-items-center border-bottom">
-                        <h2 className="font-weight-bold h4 flex-grow-1">
-                            <IconContext.Provider value={{ className: "icon-1r mr-2" }}>
-                                <RiMedal2Line />
-                            </IconContext.Provider>
-                            Overall Experience
-                        </h2>
-                        <button className="btn btn-link p-0">
-                            <IconContext.Provider value={{ className: "icon-1r" }}>
-                                <RiArrowDownLine />
-                            </IconContext.Provider>
-                        </button>
-                    </div>
-                    <div className="collapsed-body">
-                        <OverallExperience />
-                    </div>
+                <div className="mt-4">
+                    <Overall title="Overall Experience" Component={<OverallExperience />} icon={<RiMedal2Line />} isShow={false} id="collapseOverallExperience" />
                 </div>
-                <div className="collapsed-item mt-4">
-                    <div className="collapsed-title pt-4 pb-1 d-flex align-items-center border-bottom">
-                        <h2 className="font-weight-bold h4 flex-grow-1">
-                            <IconContext.Provider value={{ className: "icon-1r mr-2" }}>
-                                <RiStickyNote2Line />
-                            </IconContext.Provider>
-                            Notes
-                        </h2>
-                        <button className="btn btn-link p-0">
-                            <IconContext.Provider value={{ className: "icon-1r" }}>
-                                <RiArrowDownLine />
-                            </IconContext.Provider>
-                        </button>
-                    </div>
-                    <div className="collapsed-body">
-                        <Notes />
-                    </div>
+                <div className="mt-4">
+                    <Overall title="Notes" Component={<Notes />} icon={<RiStickyNote2Line />} isShow={false} id="collapseNotes" />
                 </div>
             </div>
         )

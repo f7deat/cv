@@ -7,7 +7,7 @@ export default class Navbar extends React.Component {
         return (
             <header>
                 <div className="row border-bottom">
-                    <div className="col-md-1 border-right text-center">
+                    <div className="col-md-1 border-right text-center hoverable">
                         <div className="p-3">
                             <IconContext.Provider value={{ className: "icon-1r" }}>
                                 <RiHomeLine />
@@ -22,7 +22,7 @@ export default class Navbar extends React.Component {
                             <input type="text" className="border-0 form-control h-100 nav-search-box" placeholder="search for any thing..." />
                         </div>
                     </div>
-                    <div className="col-md-1 border-left text-center">
+                    <div className="col-md-1 border-left text-center hoverable">
                         <div className="p-3">
                             <IconContext.Provider value={{ className: "icon-1r" }}>
                                 <RiMoreLine />
