@@ -1,4 +1,25 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Live Demo
+
+[https://f7deat.github.io/cv](https://f7deat.github.io/cv)
+
+### Screenshoot
+
+![f7deat cv](https://i.imgur.com/upyqeap.png)
+
+### Package
+
+- [React-Icons](https://github.com/react-icons/react-icons)
+- [Node-Sass](https://github.com/sass/node-sass)
+- [Bootstrap](https://getbootstrap.com/)
+- [JQuery](https://jquery.com/)
+
+### Sponsor
+
+Give me a coffee: [Paypal](https://www.paypal.com/paypalme/f7deat)
+
+### Tutorial
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). Default Read Me generate from CLI =))
 
 ## Available Scripts
 

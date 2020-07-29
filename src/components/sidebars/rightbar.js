@@ -1,10 +1,11 @@
 import React from 'react';
 import Bio from './rights/bio';
+import Overall from './rights/overall';
 import DeveloperHighlights from './rights/highlights';
 import OverallThoughts from './rights/thoughts';
 import OverallExperience from './rights/overallexperience';
 import Notes from './rights/notes';
-import { RiUserHeartLine, RiArrowDownLine, RiCodeSSlashLine, RiArrowUpLine,
+import { RiUserHeartLine, RiArrowDownLine, RiCodeSSlashLine,
     RiChat3Line, RiMedal2Line, RiStickyNote2Line } from "react-icons/ri";
 import { IconContext } from 'react-icons';
 
@@ -12,24 +13,7 @@ export default class RightBar extends React.Component {
     render() {
         return (
             <div className="collapsed">
-                <div className="collapsed-item">
-                    <div className="collapsed-title pt-4 pb-1 d-flex align-items-center border-bottom">
-                        <h2 className="font-weight-bold h4 flex-grow-1">
-                            <IconContext.Provider value={{ className: "icon-1r mr-2" }}>
-                                <RiUserHeartLine />
-                            </IconContext.Provider>
-                            Bio
-                        </h2>
-                        <button className="btn btn-link p-0">
-                            <IconContext.Provider value={{ className: "icon-1r" }}>
-                                <RiArrowUpLine />
-                            </IconContext.Provider>
-                        </button>
-                    </div>
-                    <div className="collapsed-body">
-                        <Bio />
-                    </div>
-                </div>
+                <Overall title="Bio" Component={<Bio/>} icon={<RiUserHeartLine/>} isShow={true}/>
                 <div className="collapsed-item mt-4">
                     <div className="collapsed-title pt-4 pb-1 d-flex align-items-center border-bottom">
                         <h2 className="font-weight-bold h4 flex-grow-1">

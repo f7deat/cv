@@ -1,6 +1,7 @@
 import React from 'react';
 import TimeLine from './timeline';
 import Experience from './experience';
+import Skill from './skill';
 
 export default class Content extends React.Component {
     render() {
@@ -8,7 +9,7 @@ export default class Content extends React.Component {
             <div className="mt-3">
                 <div className="title mb-4">
                     <div className="text-muted" style={{ fontSize: '1.2rem', fontWeight: 500 }}>
-                        Appliant
+                        Applicant
                 </div>
                     <h1 className="h2">
                         Dinh Cong Tan Details
@@ -18,6 +19,8 @@ export default class Content extends React.Component {
                 <TimeLine/>
                 <h2 className="h4 font-weight-bold mt-4">Experience</h2>
                 <Experience/>
+                <h2 className="h4 font-weight-bold mt-4">Technical Skill</h2>
+                <Skill/>
             </div>
         )
     }
