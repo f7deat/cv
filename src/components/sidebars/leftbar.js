@@ -3,11 +3,24 @@ import { AiFillGithub, AiFillLinkedin, AiFillTwitterCircle } from "react-icons/a
 import { IconContext } from "react-icons";
 
 export default class LeftBar extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            isRealAvatar: false
+        }
+    }
+    changeAvatar = () => {
+        this.setState(
+            {
+                isRealAvatar: !this.state.isRealAvatar
+            }
+        )
+    }
     render() {
         return (
             <div className="h-100">
                 <div className="p-4 text-center justify-items-center">
-                    <img src="https://i.gifer.com/FSrf.gif" alt="avatar" className="object-fit-cover rounded-circle shadow" width="165" height="160" />
+                    <img src={this.state.isRealAvatar? "https://i.imgur.com/e2lvHTt.jpg" : "https://i.gifer.com/FSrf.gif"} alt="avatar" className="hoverable object-fit-cover rounded-circle shadow" width="165" height="160" onClick={this.changeAvatar} />
                 </div>
                 <div className="p-2 text-center justify-items-center">
                     <a href="https://github.com/f7deat" className="mr-2">
@@ -41,9 +54,15 @@ export default class LeftBar extends React.Component {
                     </div>
                     <div className="text-muted mt-3">
                         Phone
-          </div>
+                    </div>
                     <div className="font-weight-bold">
                         <a href="telto:84762559696">(+84) 762.559.696</a>
+                    </div>
+                    <div className="text-muted mt-3">
+                        Date Of Birth
+                    </div>
+                    <div className="font-weight-bold">
+                        November 20, 1996
                     </div>
                 </div>
             </div>
