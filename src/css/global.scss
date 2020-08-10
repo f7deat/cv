@@ -23,3 +23,9 @@ a, .btn-link {
 .border-bottom-dashed {
     border-bottom: 1px dashed #d1d1d1;
 }
+.dark-theme {
+    filter: invert(1) hue-rotate(180deg);
+}
+.dark-theme img {
+    filter: invert(1) hue-rotate(180deg);
+}

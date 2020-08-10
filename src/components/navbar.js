@@ -1,8 +1,25 @@
 import React from 'react';
-import { RiHomeLine, RiMoreLine, RiSearchLine } from "react-icons/ri";
+import { RiHomeLine, RiMoreLine, RiSearchLine, RiSunLine } from "react-icons/ri";
 import { IconContext } from "react-icons";
 
 export default class Navbar extends React.Component {
+    constructor(props) {
+        super(props)
+        this.state = {
+            isSwiched: false
+        }
+    }
+    switchTheme() {
+        if (this.state.isSwiched) {
+            document.getElementsByTagName('html')[0].classList.add('dark-theme');
+        }
+        else {
+            document.getElementsByTagName('html')[0].classList.remove('dark-theme');
+        }
+        this.setState({
+            isSwiched: !this.state.isSwiched
+        })
+    }
     render() {
         return (
             <header>
@@ -14,12 +31,19 @@ export default class Navbar extends React.Component {
                             </IconContext.Provider>
                         </div>
                     </div>
-                    <div className="col-md-10">
+                    <div className="col-md-8">
                         <div className="d-flex h-100">
                             <IconContext.Provider value={{ className: "h-100 text-muted" }}>
                                 <RiSearchLine />
                             </IconContext.Provider>
                             <input type="text" className="border-0 form-control h-100 nav-search-box" placeholder="search for any thing..." />
+                        </div>
+                    </div>
+                    <div className="col-md-2 border-left text-center hoverable" onClick={() => this.switchTheme()}>
+                        <div className="p-3">
+                            <IconContext.Provider value={{ className: "icon-1r" }}>
+                                <RiSunLine />
+                            </IconContext.Provider>
                         </div>
                     </div>
                     <div className="col-md-1 border-left text-center hoverable">
