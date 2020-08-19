@@ -2,7 +2,7 @@ import React from 'react';
 import { RiStarLine } from "react-icons/ri";
 import { IconContext } from "react-icons";
 
-export default class MySkill extends React.Component {
+export default class MySkill extends React.Component<any> {
     render() {
         return (
             <tr>

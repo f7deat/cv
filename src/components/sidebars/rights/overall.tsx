@@ -1,9 +1,10 @@
 import React from 'react';
 import { RiArrowUpLine, RiArrowDownLine } from "react-icons/ri";
 import { IconContext } from 'react-icons';
+import { IOverallState } from '../../../interfaces/myState';
 
-export default class Overall extends React.Component {
-    constructor(props) {
+export default class Overall extends React.Component<any, IOverallState> {
+    constructor(props: any) {
         super(props);
         this.state = {
             show: this.props.isShow

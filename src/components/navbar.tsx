@@ -1,9 +1,10 @@
 import React from 'react';
 import { RiHomeLine, RiMoreLine, RiSearchLine, RiSunLine } from "react-icons/ri";
 import { IconContext } from "react-icons";
+import {INavBarState} from '../interfaces/myState';
 
-export default class Navbar extends React.Component {
-    constructor(props) {
+export default class Navbar extends React.Component<any, INavBarState> {
+    constructor(props: any) {
         super(props)
         this.state = {
             isSwiched: false
