@@ -1,5 +1,5 @@
 import React from 'react';
-import { AiFillGithub, AiFillLinkedin, AiFillTwitterCircle } from "react-icons/ai";
+import { AiFillGithub, AiFillLinkedin, AiFillTwitterCircle, AiOutlineMinusCircle, AiOutlineRetweet } from "react-icons/ai";
 import { IconContext } from "react-icons";
 import {ILeftBarState} from '../../interfaces/myState';
 
@@ -19,9 +19,12 @@ export default class LeftBar extends React.Component<any, ILeftBarState> {
     }
     render() {
         return (
-            <div className="h-100">
-                <div className="p-4 text-center justify-items-center">
+            <div className="h-100 position-relative">
+                <div className="p-4 text-center justify-items-center position-relative avatar">
                     <img src={this.state.isRealAvatar? "https://i.imgur.com/e2lvHTt.jpg" : "https://i.gifer.com/FSrf.gif"} alt="avatar" className="hoverable object-fit-cover rounded-circle shadow" width="165" height="160" onClick={this.changeAvatar} />
+                    <div className="swich-avatar text-danger">
+                        <AiOutlineRetweet />
+                    </div>
                 </div>
                 <div className="p-2 text-center justify-items-center">
                     <a href="https://github.com/f7deat" className="mr-2">
@@ -65,6 +68,9 @@ export default class LeftBar extends React.Component<any, ILeftBarState> {
                     <div className="font-weight-bold">
                         November 20, 1996
                     </div>
+                </div>
+                <div className="toggle-persional-info d-none d-md-block">
+                    <AiOutlineMinusCircle/>
                 </div>
             </div>
         )

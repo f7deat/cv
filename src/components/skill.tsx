@@ -23,7 +23,7 @@ export default class Skill extends React.Component {
                             <MySkill name="CSS, CSS3, SASS" rate="5"/>
                             <MySkill name="HTML, HTML5" rate="5"/>
                             <MySkill name="AngularJs" rate="4"/>
-                            <MySkill name="Angular" rate="2"/>
+                            <MySkill name="Angular" rate="3"/>
                             <MySkill name="React Native" rate="2"/>
                             <MySkill name="Vuex, Redux" rate="2"/>
                             <MySkill name="Elastic Search" rate="3"/>

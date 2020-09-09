@@ -19,6 +19,7 @@ export default class MyApplication extends React.Component {
                         <li className="text-muted">... I will update in free time :lovely:</li>
                     </ul>
                 </div>
+                <h1 className="h2">My Portfolio</h1>
             </div>
         )
     }

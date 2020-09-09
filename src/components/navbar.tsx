@@ -1,7 +1,8 @@
 import React from 'react';
 import { RiHomeLine, RiMoreLine, RiSearchLine, RiSunLine } from "react-icons/ri";
 import { IconContext } from "react-icons";
-import {INavBarState} from '../interfaces/myState';
+import { INavBarState } from '../interfaces/myState';
+import { Link } from 'react-router-dom';
 
 export default class Navbar extends React.Component<any, INavBarState> {
     constructor(props: any) {
@@ -27,9 +28,11 @@ export default class Navbar extends React.Component<any, INavBarState> {
                 <div className="row border-bottom">
                     <div className="col-md-1 border-right text-center hoverable">
                         <div className="p-3">
-                            <IconContext.Provider value={{ className: "icon-1r" }}>
-                                <RiHomeLine />
-                            </IconContext.Provider>
+                            <Link to="/">
+                                <IconContext.Provider value={{ className: "icon-1r" }}>
+                                    <RiHomeLine />
+                                </IconContext.Provider>
+                            </Link>
                         </div>
                     </div>
                     <div className="col-md-8">

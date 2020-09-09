@@ -17,7 +17,7 @@ a, .btn-link {
 .hoverable {
     cursor: pointer;
 }
-.hoverable:hover {
+.hoverable:hover, .toggle-persional-info:hover {
     color: darkblue;
 }
 .border-bottom-dashed {
@@ -28,4 +28,27 @@ a, .btn-link {
 }
 .dark-theme img {
     filter: invert(1) hue-rotate(180deg);
+}
+.btn:focus {
+    box-shadow: none;
+}
+.toggle-persional-info {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    font-size: 1.5rem;
+    margin-right: -1.7rem;
+    background: white;
+    padding-bottom: 0.5rem;
+    cursor: pointer;
+}
+.swich-avatar {
+    font-size: 1.5rem;
+    position: absolute;
+    right: 0;
+    display: none;
+    top: 0;
+}
+.avatar:hover .swich-avatar {
+    display: block;
 }
