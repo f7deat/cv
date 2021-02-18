@@ -16,6 +16,7 @@ export default class MyApplication extends React.Component {
                         <li><b><a href="https://f7deat.blogger.com">Blogger template</a></b>: <span className="text-muted">Over ten star on <a href="https://github.com/f7deat/F7Deat-Blogger"><RiExternalLinkLine/> Github</a> :D</span></li>
                         <li><b><a href="https://f7deat.github.io/cv">My CV</a></b>: <span className="text-muted">Current page :lol: <a href="https://github.com/f7deat/cv"><RiExternalLinkLine/> Github</a></span></li>
                         <li><b><a href="https://defsrc.xyz">DefSrc.Xyz</a></b>: <span className="text-muted">A software to save documents for political</span></li>
+                        <li><b><a href="https://f7deat.github.io/jubilant-enigma">Jubilant Enigma</a></b>: <span className="text-muted">Image Editor <a href="https://github.com/f7deat/jubilant-enigma"><RiExternalLinkLine/> Github</a></span></li>
                         <li className="text-muted">... I will update in free time :lovely:</li>
                     </ul>
                 </div>

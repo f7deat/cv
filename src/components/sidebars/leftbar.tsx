@@ -1,5 +1,5 @@
 import React from 'react';
-import { AiFillGithub, AiFillLinkedin, AiFillTwitterCircle, AiOutlineMinusCircle, AiOutlineRetweet } from "react-icons/ai";
+import { AiFillGithub, AiFillLinkedin, AiFillTwitterCircle, AiOutlineMinusCircle, AiOutlinePlusCircle, AiOutlineRetweet } from "react-icons/ai";
 import { IconContext } from "react-icons";
 import {ILeftBarState} from '../../interfaces/myState';
 
@@ -7,9 +7,11 @@ export default class LeftBar extends React.Component<any, ILeftBarState> {
     constructor(props: any) {
         super(props);
         this.state = {
-            isRealAvatar: false
+            isRealAvatar: false,
+            isToggle: false
         }
     }
+
     changeAvatar = () => {
         this.setState(
             {
@@ -17,6 +19,15 @@ export default class LeftBar extends React.Component<any, ILeftBarState> {
             }
         )
     }
+
+    toggleBar = () => {
+        this.setState(
+            {
+                isToggle: !this.state.isToggle
+            }
+        )
+    }
+
     render() {
         return (
             <div className="h-100 position-relative">
@@ -69,8 +80,8 @@ export default class LeftBar extends React.Component<any, ILeftBarState> {
                         November 20, 1996
                     </div>
                 </div>
-                <div className="toggle-persional-info d-none d-md-block">
-                    <AiOutlineMinusCircle/>
+                <div className="toggle-persional-info d-none d-md-block" onClick={this.toggleBar}>
+                    {this.state.isToggle ? <AiOutlinePlusCircle/> : <AiOutlineMinusCircle/>}
                 </div>
             </div>
         )
