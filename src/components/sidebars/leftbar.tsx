@@ -1,5 +1,5 @@
 import React from 'react';
-import { AiFillGithub, AiFillLinkedin, AiFillTwitterCircle, AiOutlineMinusCircle, AiOutlinePlusCircle, AiOutlineRetweet } from "react-icons/ai";
+import { AiFillGithub, AiFillLinkedin, AiFillTwitterCircle, AiOutlineRetweet } from "react-icons/ai";
 import { IconContext } from "react-icons";
 import {ILeftBarState} from '../../interfaces/myState';
 
@@ -30,9 +30,9 @@ export default class LeftBar extends React.Component<any, ILeftBarState> {
 
     render() {
         return (
-            <div className="h-100 position-relative">
+            <div>
                 <div className="p-4 text-center justify-items-center position-relative avatar">
-                    <img src={this.state.isRealAvatar? "https://i.imgur.com/e2lvHTt.jpg" : "https://i.gifer.com/FSrf.gif"} alt="avatar" className="hoverable object-fit-cover rounded-circle shadow" width="165" height="160" onClick={this.changeAvatar} />
+                    <img src={this.state.isRealAvatar? "https://github.com/f7deat.png" : "https://i.gifer.com/FSrf.gif"} alt="avatar" className="hoverable object-fit-cover rounded-circle shadow" width="200" height="200" onClick={this.changeAvatar} />
                     <div className="swich-avatar text-danger">
                         <AiOutlineRetweet />
                     </div>
@@ -79,9 +79,6 @@ export default class LeftBar extends React.Component<any, ILeftBarState> {
                     <div className="font-weight-bold">
                         November 20, 1996
                     </div>
-                </div>
-                <div className="toggle-persional-info d-none d-md-block" onClick={this.toggleBar}>
-                    {this.state.isToggle ? <AiOutlinePlusCircle/> : <AiOutlineMinusCircle/>}
                 </div>
             </div>
         )

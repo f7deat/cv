@@ -18,7 +18,12 @@ export default class Experience extends React.Component {
                 <Company logo="https://novaonads.com/wp-content/uploads/2015/08/NovaAds-thay-%C4%91%E1%BB%95i-nh%E1%BA%ADn-di%E1%BB%87n-th%C6%B0%C6%A1ng-hi%E1%BB%87u-th%C3%A0nh-NOVAON-ADS-3.png"
                     name="Novaon"
                     description="NOVAON works hard in becoming and maintaining the postion of one of the leading companies in Digital Marketing, in order to creat value in return ..."
-                    start="Mar 2019" end="Now"
+                    start="Mar 2019" end="Mar 2021"
+                />
+                <Company logo="https://i.imgur.com/fg778IR.png"
+                    name="VNPT-IT"
+                    description="VNPT is a Vietnamese major mobile network operator headquartered in Hanoi, Vietnam. Founded on 26 June 1996, as a GSM launcher, VNPT is the second network..."
+                    start="Mar 2021" end="Now"
                 />
             </div>
         )

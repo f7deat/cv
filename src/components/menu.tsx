@@ -6,23 +6,23 @@ import { Link } from 'react-router-dom';
 export default class Menu extends React.Component {
     render() {
         return (
-            <nav className="nav flex-column h-100 text-center">
-                <Link className="nav-link py-4 active" to="/">
-                    <IconContext.Provider value={{ className: "icon-2x" }}>
+            <nav className="nav text-center">
+                <Link className="nav-link active" to="/">
+                    <IconContext.Provider value={{ className: "icon-2x App-logo" }}>
                         <RiReactjsLine className="icon-2x" />
                     </IconContext.Provider>
                 </Link>
-                <Link className="nav-link py-4" to="/app">
+                <Link className="nav-link" to="/app">
                     <IconContext.Provider value={{ className: "icon-2x" }}>
                         <RiAppsLine />
                     </IconContext.Provider>
                 </Link>
-                <Link className="nav-link py-4" to="/task">
+                <Link className="nav-link" to="/task">
                     <IconContext.Provider value={{ className: "icon-2x" }}>
                         <RiTaskLine />
                     </IconContext.Provider>
                 </Link>
-                <Link className="nav-link py-4 disabled" to="/" tabIndex={-1} aria-disabled="true">
+                <Link className="nav-link disabled" to="/" tabIndex={-1} aria-disabled="true">
                     <IconContext.Provider value={{ className: "icon-2x" }}>
                         <RiMore2Line />
                     </IconContext.Provider>

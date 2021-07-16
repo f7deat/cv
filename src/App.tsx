@@ -12,18 +12,16 @@ import MyApplication from './components/myapplication';
 function App() {
   return (
     <HashRouter>
-      <div className="row mx-0 h-100">
-        <div className="col-md-3 h-100 fixed-top bg-white">
-          <div className="row h-100">
-            <div className="col-md-3 h-100 bg-light d-none d-md-block">
-              <Menu />
-            </div>
-            <div className="col-md-9 border-right">
-              <LeftBar />
-            </div>
+      <div className="wrapper">
+        <div className="sidebar">
+          <div className="bg-light menu">
+            <Menu />
+          </div>
+          <div className="profile-box">
+            <LeftBar />
           </div>
         </div>
-        <div className="col-md-9 offset-3">
+        <div className="main">
           <Navbar />
           <div className="p-4">
             <div className="row">

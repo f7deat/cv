@@ -1,14 +1,6 @@
 html, body, #root {
   height: 100%;
 }
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
 .nav-search-box::placeholder {
   font-style: italic;
@@ -65,5 +57,110 @@ input[type=number]:focus,
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+.menu {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 100;
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+  }
+}
+
+.nav-link {
+  width: 80px;
+  height: 80px;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar {
+  display: flex;
+  height: 100%;
+  .profile-box {
+    flex-grow: 1;
+    padding: 1rem;
+    position: relative;
+  }
+}
+
+.btn-profile {
+  position: absolute;
+  right: -0.75rem;
+  font-size: 1.5rem;
+  top: 50%;
+  background-color: white;
+  border-radius: 100%;
+  padding-bottom: 0.5rem;
+  cursor: pointer;
+  &:hover {
+    transform: rotate(180deg);
+    transition-duration: 500ms;
+  }
+}
+
+.main {
+  display: none;
+}
+
+.header {
+  display: flex;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #eee; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #333; 
+  border-radius: 8px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper {
+    display: flex;
+  }
+  .sidebar {
+    width: 444px;
+    position: fixed;
+  }
+  .main {
+    flex-grow: 1;
+    margin-left: 444px;
+    display: block;
+    border-left: 1px solid #e1e1e1;
+  }
+  .menu {
+    height: 100%;
+    position: unset;
+    width: 100px;
+    .nav {
+      flex-direction: column;
+      height: auto;
+    }
+  }
+
+  .nav-link {
+    width: 100px;
+    height: 100px;
   }
 }
