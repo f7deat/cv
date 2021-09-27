@@ -12,7 +12,7 @@ export default class Menu extends React.Component {
                         <RiReactjsLine className="icon-2x" />
                     </IconContext.Provider>
                 </Link>
-                <Link className="nav-link" to="/app">
+                <Link className="nav-link" to="/repositories">
                     <IconContext.Provider value={{ className: "icon-2x" }}>
                         <RiAppsLine />
                     </IconContext.Provider>

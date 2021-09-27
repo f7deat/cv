@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './css/app.scss';
 import Navbar from './components/navbar';
 import Menu from './components/menu';
@@ -7,9 +7,17 @@ import LeftBar from './components/sidebars/leftbar';
 import Content from './components/content';
 import { HashRouter, Switch, Route } from 'react-router-dom';
 import MyTask from './components/mytask';
-import MyApplication from './components/myapplication';
+import AOS from 'aos';
+import { Repository } from './components/pages/repository';
 
 function App() {
+  
+  useEffect(() => {
+    AOS.init({
+      duration : 2000
+    });
+  }, []);
+
   return (
     <HashRouter>
       <div className="wrapper">
@@ -28,7 +36,7 @@ function App() {
               <div className="col-md-9">
                 <Switch>
                   <Route path="/task" component={MyTask} />
-                  <Route path="/app" component={MyApplication} />
+                  <Route path="/repositories" component={Repository} />
                   <Route path="/" component={Content} />
                 </Switch>
               </div>

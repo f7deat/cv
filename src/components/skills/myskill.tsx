@@ -5,7 +5,7 @@ import { IconContext } from "react-icons";
 export default class MySkill extends React.Component<any> {
     render() {
         return (
-            <tr>
+            <tr data-aos="zoom-out">
                 <td className="font-weight-bold">
                     {this.props.name}
                 </td>

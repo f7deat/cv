@@ -19,7 +19,7 @@ export default class Content extends React.Component {
                 <TimeLine/>
                 <h2 className="h4 font-weight-bold mt-4">Experience</h2>
                 <Experience/>
-                <h2 className="h4 font-weight-bold mt-4">Technical Skill</h2>
+                <h2 className="h4 font-weight-bold mt-4" data-aos="fade-up">Technical Skill</h2>
                 <Skill/>
             </div>
         )

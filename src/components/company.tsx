@@ -3,7 +3,7 @@ import React from 'react';
 export default class Company extends React.Component<any> {
     render() {
         return (
-            <div className="card mb-3 border-0">
+            <div className="card mb-3 border-0" data-aos="fade-up">
                 <div className="row no-gutters">
                     <div className="col-md-2 d-flex align-items-center">
                         <img src={this.props.logo} className="object-fit-cover" width="100%" alt={this.props.name} />
