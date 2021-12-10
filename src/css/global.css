@@ -1,9 +1,14 @@
-$text-dark: #172b4d;
+:root {
+    --dark: #172b4d
+}
 body {
-    color: $text-dark;
+    color: var(--dark);
 }
 a, .btn-link {
-  color: $text-dark;
+  color: var(--dark);
+}
+svg {
+    display: unset;
 }
 .icon-2x {
     font-size: 2rem;
@@ -41,14 +46,4 @@ a, .btn-link {
     background: white;
     padding-bottom: 0.5rem;
     cursor: pointer;
-}
-.swich-avatar {
-    font-size: 1.5rem;
-    position: absolute;
-    right: 0;
-    display: none;
-    top: 0;
-}
-.avatar:hover .swich-avatar {
-    display: block;
 }

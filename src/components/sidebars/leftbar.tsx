@@ -1,12 +1,22 @@
 import React, { useEffect, useState } from 'react';
-import { AiFillGithub, AiFillLinkedin, AiFillTwitterCircle, AiOutlineRetweet } from "react-icons/ai";
+import { AiFillGithub, AiFillLinkedin, AiFillTwitterCircle } from "react-icons/ai";
+import { HiOutlineLocationMarker, HiPencilAlt } from "react-icons/hi";
+import { RiUserFollowLine } from "react-icons/ri";
+import { BiGitRepoForked } from "react-icons/bi";
 import { IconContext } from "react-icons";
 import axios from 'axios';
 import { User } from '../../interfaces/user';
+import SvgMorphPlugin from 'rc-tween-one/lib/plugin/SvgMorphPlugin';
+import TweenOne from 'rc-tween-one';
+import Texty from 'rc-texty';
+import Children from 'rc-tween-one/lib/plugin/ChildrenPlugin';
+
+TweenOne.plugins.push(Children);
 
 export default function LeftBar(props: any) {
 
     const [user, setUser] = useState<User>();
+    TweenOne.plugins.push(SvgMorphPlugin);
 
     useEffect(() => {
         axios.get('https://api.github.com/users/f7deat').then(response => {
@@ -16,10 +26,9 @@ export default function LeftBar(props: any) {
 
     return (
         <div>
-            <div className="p-4 text-center justify-items-center position-relative avatar">
-                <img src={props.isRealAvatar ? "https://github.com/f7deat.png" : "https://i.gifer.com/FSrf.gif"} alt="avatar" className="hoverable object-fit-cover rounded-circle shadow" width="200" height="200" />
-                <div className="swich-avatar text-danger">
-                    <AiOutlineRetweet />
+            <div className='mb-4 flex items-center justify-center'>
+                <div className="avatar rounded-circle bg-gray-800 cursor-move">
+                    <img src={user?.avatar_url} alt="avatar" className="object-fit-cover rounded-circle shadow hover:opacity-75 duration-500 transition" width="200" height="200" />
                 </div>
             </div>
             <div className="p-2 text-center justify-items-center">
@@ -40,8 +49,47 @@ export default function LeftBar(props: any) {
                 </a>
             </div>
             <div className="p-2 text-center">
-                <h1 className="h4 font-weight-bold">{user?.name}</h1>
-                <div className="text-muted">
+                <h1 className="h4 font-weight-bold"><Texty>{user?.name}</Texty></h1>
+                <div className='flex justify-center gap-3'>
+                    <div className='flex items-center gap-1'>
+                        <span className='font-medium'>
+                            <TweenOne animation={{
+                                duration: 1000,
+                                Children: {
+                                    value: user?.followers,
+                                    floatLength: 0
+                                }
+                            }}></TweenOne>
+                        </span>
+                        <RiUserFollowLine />
+                    </div>
+                    <div className='flex items-center gap-1'>
+                        <span className='font-medium'>
+                            <TweenOne animation={{
+                                duration: 1000,
+                                Children: {
+                                    value: user?.public_repos,
+                                    floatLength: 0
+                                }
+                            }}></TweenOne>
+                        </span>
+                        <BiGitRepoForked />
+                    </div>
+                    <div className='flex items-center gap-1'>
+                        <span className='font-medium'>
+                            <TweenOne animation={{
+                                duration: 1000,
+                                Children: {
+                                    value: user?.public_gists,
+                                    floatLength: 0
+                                }
+                            }}></TweenOne>
+                        </span>
+                        <HiPencilAlt />
+                    </div>
+                </div>
+                <div className="text-gray-500 flex gap-1 items-center justify-center">
+                    <HiOutlineLocationMarker />
                     {user?.location}
                 </div>
             </div>

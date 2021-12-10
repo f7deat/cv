@@ -1,0 +1,74 @@
+[
+    {
+        "name": "ReactJs",
+        "rate": 4
+    },
+    {
+        "name": "VueJs",
+        "rate": 2
+    },
+    {
+        "name": "CSS, CSS3, SASS",
+        "rate": 4
+    },
+    {
+        "name": "HTML, HTML5",
+        "rate": 5
+    },
+    {
+        "name": "AngularJs",
+        "rate": 4
+    },
+    {
+        "name": "Angular",
+        "rate": 3
+    },
+    {
+        "name": "Webform",
+        "rate": 4
+    },
+    {
+        "name": "Elastic Search",
+        "rate": 3
+    },
+    {
+        "name": "C#",
+        "rate": 4
+    },
+    {
+        "name": "TypeScript, Javascript, JQuery",
+        "rate": 4
+    },
+    {
+        "name": "Oracle",
+        "rate": 4
+    },
+    {
+        "name": "SQL Server",
+        "rate": 4
+    },
+    {
+        "name": ".NET Framework, .NET Core",
+        "rate": 4
+    },
+    {
+        "name": "ASP.NET, ASP.NET Core",
+        "rate": 4
+    },
+    {
+        "name": "VB6, VB.NET",
+        "rate": 4
+    },
+    {
+        "name": "UI/UX",
+        "rate": 4
+    },
+    {
+        "name": "Redis",
+        "rate": 3
+    },
+    {
+        "name": "Automation Test",
+        "rate": 4
+    }
+]

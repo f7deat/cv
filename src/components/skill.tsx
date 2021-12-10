@@ -1,60 +1,28 @@
 import React from 'react';
-import MySkill from './skills/myskill';
+import skills from '../data/skill.json';
+import { RiStarLine } from "react-icons/ri";
+import { IconContext } from "react-icons";
 
 export default class Skill extends React.Component {
     render() {
         return (
-            <div className="row mt-4">
-                <div className="col-md-6">
-                    <table className="table table-borderless">
-                        <thead className="border-bottom text-muted text-uppercase" data-aos="zoom-out">
-                            <tr>
-                                <th className="font-weight-normal">
-                                    Name
-                                </th>
-                                <th className="font-weight-normal">
-                                    Rate
-                                </th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <MySkill name="ReactJs" rate="4" />
-                            <MySkill name="VueJs" rate="3" />
-                            <MySkill name="CSS, CSS3, SASS" rate="5" />
-                            <MySkill name="HTML, HTML5" rate="5" />
-                            <MySkill name="AngularJs" rate="4" />
-                            <MySkill name="Angular" rate="4" />
-                            <MySkill name="React Native" rate="2" />
-                            <MySkill name="ASP.NET MVC, Webform" rate="5" />
-                            <MySkill name="Elastic Search" rate="3" />
-                        </tbody>
-                    </table>
-                </div>
-                <div className="col-md-6">
-                    <table className="table table-borderless">
-                        <thead className="border-bottom text-muted text-uppercase" data-aos="zoom-out">
-                            <tr>
-                                <th className="font-weight-normal">
-                                    Name
-                                </th>
-                                <th className="font-weight-normal">
-                                    Rate
-                                </th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <MySkill name="C#" rate="5" />
-                            <MySkill name="TypeScript" rate="5" />
-                            <MySkill name="SQL Server, MySQL, Oracle" rate="4" />
-                            <MySkill name=".NET, .NET Core" rate="5" />
-                            <MySkill name="ASP.NET, ASP.NET Core" rate="5" />
-                            <MySkill name="VB6, VB.NET" rate="5" />
-                            <MySkill name="Javascript, JQuery" rate="5" />
-                            <MySkill name="UI/UX" rate="5" />
-                            <MySkill name="Redis" rate="3" />
-                        </tbody>
-                    </table>
-                </div>
+            <div className="md:flex flex-wrap mt-4">
+                {
+                    skills.map((value, index) => (
+                        <div className="md:w-1/2" key={index}>
+                            <div className='px-4 py-2 flex items-center justify-between'>
+                                <div className="font-weight-bold">
+                                    {value.name}
+                                </div>
+                                <div>
+                                    <IconContext.Provider value={{ className: "text-warning mb-1" }}>
+                                        {value.rate} <RiStarLine />
+                                    </IconContext.Provider>
+                                </div>
+                            </div>
+                        </div>
+                    ))
+                }
             </div>
         )
     }

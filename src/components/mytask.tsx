@@ -57,11 +57,30 @@ export default class MyTask extends React.Component {
                     </div>
                 </div>
                 <div className="py-2 border-bottom-dashed">
-                    <div className="font-weight-bold">Google Shopping</div>
+                    <div className="font-weight-bold">OnMarketer</div>
                     <div>
-                        Description: <span className="text-muted">Create Google Shopping Tool for any user</span><br/>
+                        Description: <span className="text-muted"><a href='https://www.onmarketer.net/' target="_blank" rel="noreferrer" className='text-blue-800 font-medium'>OnMarketer</a> - The leading Marketing Automation platform - is a personalized customer journey building solution that helps optimize website conversions automatically with an intuitive drag and drop tool.</span><br/>
                         Technical: <span className="text-muted">Google API, ASP.NET MVC5, JQuyery, JavaScript, AngularJs, Bootstrap, SQL Server,...</span><br/>
                         Team Size: <span className="text-muted">6 - colleague very fun, i'm so happy in here</span>
+                    </div>
+                </div>
+                <h2 className="h4 font-weight-bold mt-4">VNPT-IT</h2>
+                <div className="py-2 border-bottom-dashed">
+                    <div className="font-weight-bold">eZoZo</div>
+                    <div>
+                        Description: <span className="text-muted"><a href='https://ezozo.vn' target="_blank" rel="noreferrer" className='text-blue-800 font-medium'>eZoZo</a> is professional restaurant management software</span><br/>
+                        Technical: <span className="text-muted">Angular 10, Anguar Material</span><br/>
+                        Besponsile for: <span className="text-muted">Front-end Developer</span><br/>
+                        Team Size: <span className="text-muted">6</span>
+                    </div>
+                </div>
+                <div className="py-2 border-bottom-dashed">
+                    <div className="font-weight-bold">VNPT Portal</div>
+                    <div>
+                        Description: <span className="text-muted"><a href='https://vnptweb.vn' target="_blank" rel="noreferrer" className='text-blue-800 font-medium'>VNPT Portal</a> is a solution that allows Government agencies to create a single online focal point for all subjects</span><br/>
+                        Technical: <span className="text-muted">Webform, Javascript, Jquery, SqlServer, Selelium</span><br/>
+                        Besponsile for: <span className="text-muted">Fullstack Developer</span><br/>
+                        Team Size: <span className="text-muted">5</span>
                     </div>
                 </div>
             </div>

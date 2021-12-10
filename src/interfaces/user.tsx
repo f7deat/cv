@@ -12,6 +12,6 @@ export interface User {
     twitter_username: string;
     followers: number;
     public_repos: number;
-    public_gists: string;
+    public_gists: number;
     hireable: boolean;
 }

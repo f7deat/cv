@@ -1,5 +1,5 @@
 import React from 'react';
-import '../css/timeline.scss';
+import '../css/timeline.css';
 
 export default class TimeLine extends React.Component {
     render() {

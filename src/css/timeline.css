@@ -1,0 +1,34 @@
+.timeline {
+    position: relative;
+    min-height: 200px;
+}
+.timeline .timeline-item {
+    position: relative;
+    width: 100%;
+}
+.timeline-body {
+    position: absolute;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 40% 80%, 25% 100%, 22% 80%, 0% 80%);
+    background-color: #eee;
+    padding: 1rem 1.5rem 3rem 1.5rem;
+}
+.timeline-icon {
+    padding: 0.5rem 2rem;
+    color: #ffffff;
+    position: absolute;
+    min-width: 150px;
+    top: 135px;
+    font-weight: bold;
+    text-align: center;
+    clip-path: polygon(85% 0%, 100% 50%, 85% 100%, 0% 100%, 10% 50%, 0% 0%);
+}
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 177px;
+    left: 0;
+    height: 5px;
+    width: 100%;
+    background: #d8e5ee;
+    z-index: -1;
+}

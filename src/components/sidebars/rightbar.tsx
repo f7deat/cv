@@ -9,6 +9,10 @@ import {
     RiUserHeartLine, RiCodeSSlashLine,
     RiChat3Line, RiMedal2Line, RiStickyNote2Line
 } from "react-icons/ri";
+import {
+    FaViadeo
+} from "react-icons/fa"
+import { Favorite } from '../favorite';
 
 export default class RightBar extends React.Component {
     render() {
@@ -26,6 +30,9 @@ export default class RightBar extends React.Component {
                 </div>
                 <div className="mt-4">
                     <Overall title="Notes" Component={<Notes />} icon={<RiStickyNote2Line />} isShow={false} id="collapseNotes" />
+                </div>
+                <div className="mt-4">
+                    <Overall title="Favorite" Component={<Favorite/>} icon={<FaViadeo />} isShow={false} id="collapseFavorite" />
                 </div>
             </div>
         )

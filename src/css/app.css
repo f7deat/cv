@@ -65,11 +65,12 @@ input[type=number]:focus,
   bottom: 0;
   width: 100%;
   z-index: 100;
-  .nav {
-    display: flex;
-    justify-content: space-between;
-    height: auto;
-  }
+  
+}
+.menu .nav {
+  display: flex;
+  justify-content: space-between;
+  height: auto;
 }
 
 .nav-link {
@@ -83,11 +84,12 @@ input[type=number]:focus,
 .sidebar {
   display: flex;
   height: 100%;
-  .profile-box {
-    flex-grow: 1;
-    padding: 1rem;
-    position: relative;
-  }
+  
+}
+.sidebar .profile-box {
+  flex-grow: 1;
+  padding: 1rem;
+  position: relative;
 }
 
 .btn-profile {
@@ -99,10 +101,10 @@ input[type=number]:focus,
   border-radius: 100%;
   padding-bottom: 0.5rem;
   cursor: pointer;
-  &:hover {
-    transform: rotate(180deg);
-    transition-duration: 500ms;
-  }
+}
+.btn-profile:hover {
+  transform: rotate(180deg);
+  transition-duration: 500ms;
 }
 
 .main {
@@ -116,7 +118,7 @@ input[type=number]:focus,
 
 /* width */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 4px;
 }
 
 /* Track */
@@ -127,7 +129,7 @@ input[type=number]:focus,
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #333; 
-  border-radius: 8px;
+  border-radius: 4px;
 }
 
 /* Handle on hover */
@@ -153,10 +155,10 @@ input[type=number]:focus,
     height: 100%;
     position: unset;
     width: 100px;
-    .nav {
-      flex-direction: column;
-      height: auto;
-    }
+  }
+  .menu .nav {
+    flex-direction: column;
+    height: auto;
   }
 
   .nav-link {

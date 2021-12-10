@@ -2,10 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import "aos/dist/aos.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-import './css/global.scss';
+import './css/global.css';
+import 'rc-texty/assets/index.css';
 
 ReactDOM.render(
   <React.StrictMode>

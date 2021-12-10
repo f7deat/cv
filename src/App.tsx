@@ -1,5 +1,5 @@
-import React, { useEffect } from 'react';
-import './css/app.scss';
+import React from 'react';
+import './css/app.css';
 import Navbar from './components/navbar';
 import Menu from './components/menu';
 import RightBar from './components/sidebars/rightbar';
@@ -7,16 +7,9 @@ import LeftBar from './components/sidebars/leftbar';
 import Content from './components/content';
 import { HashRouter, Switch, Route } from 'react-router-dom';
 import MyTask from './components/mytask';
-import AOS from 'aos';
 import { Repository } from './components/pages/repository';
 
 function App() {
-  
-  useEffect(() => {
-    AOS.init({
-      duration : 2000
-    });
-  }, []);
 
   return (
     <HashRouter>
