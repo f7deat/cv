@@ -10,17 +10,16 @@ export default class Content extends React.Component {
                 <div className="title mb-4">
                     <div className="text-muted" style={{ fontSize: '1.2rem', fontWeight: 500 }}>
                         Applicant
-                </div>
+                    </div>
                     <h1 className="h2">
                         Dinh Cong Tan Details
-                </h1>
+                    </h1>
                 </div>
-                <h2 className="h4 font-weight-bold mt-4">Education</h2>
-                <TimeLine/>
-                <h2 className="h4 font-weight-bold mt-4">Experience</h2>
-                <Experience/>
-                <h2 className="h4 font-weight-bold mt-4" data-aos="fade-up">Technical Skill</h2>
-                <Skill/>
+                <TimeLine />
+                <h2 className="h4 font-bold mt-4">Experience</h2>
+                <Experience />
+                <h2 className="h4 font-bold mt-4" data-aos="fade-up">Technical Skill</h2>
+                <Skill />
             </div>
         )
     }

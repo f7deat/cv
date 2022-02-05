@@ -2,6 +2,10 @@ html, body, #root {
   height: 100%;
 }
 
+#root {
+  display: flex;
+}
+
 .nav-search-box::placeholder {
   font-style: italic;
 }
@@ -65,11 +69,11 @@ input[type=number]:focus,
   bottom: 0;
   width: 100%;
   z-index: 100;
+  height: 100px;
   
 }
 .menu .nav {
   display: flex;
-  justify-content: space-between;
   height: auto;
 }
 
@@ -82,9 +86,8 @@ input[type=number]:focus,
 }
 
 .sidebar {
-  display: flex;
+  display: none;
   height: 100%;
-  
 }
 .sidebar .profile-box {
   flex-grow: 1;
@@ -105,10 +108,6 @@ input[type=number]:focus,
 .btn-profile:hover {
   transform: rotate(180deg);
   transition-duration: 500ms;
-}
-
-.main {
-  display: none;
 }
 
 .header {
@@ -138,27 +137,24 @@ input[type=number]:focus,
 }
 
 @media screen and (min-width: 768px) {
-  .wrapper {
-    display: flex;
-  }
   .sidebar {
     width: 444px;
     position: fixed;
+    display: flex;
+    left: 100px;
   }
   .main {
     flex-grow: 1;
-    margin-left: 444px;
+    margin-left: 544px;
     display: block;
-    border-left: 1px solid #e1e1e1;
   }
   .menu {
     height: 100%;
-    position: unset;
     width: 100px;
   }
   .menu .nav {
     flex-direction: column;
-    height: auto;
+    height: 100%;
   }
 
   .nav-link {

@@ -13,33 +13,29 @@ function App() {
 
   return (
     <HashRouter>
-      <div className="wrapper">
-        <div className="sidebar">
-          <div className="bg-light menu">
-            <Menu />
-          </div>
+        <div className="bg-light menu">
+          <Menu />
+        </div>
+        <div className="sidebar border-r">
           <div className="profile-box">
             <LeftBar />
           </div>
         </div>
         <div className="main">
           <Navbar />
-          <div className="p-4">
-            <div className="row">
-              <div className="col-md-9">
+            <div className="md:flex">
+              <div className="md:w-3/4 px-4">
                 <Switch>
                   <Route path="/task" component={MyTask} />
                   <Route path="/repositories" component={Repository} />
                   <Route path="/" component={Content} />
                 </Switch>
               </div>
-              <div className="col-md-3">
+              <div className="md:w-1/4 px-2">
                 <RightBar />
               </div>
             </div>
-          </div>
         </div>
-      </div>
     </HashRouter>
   );
 }

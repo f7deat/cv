@@ -9,7 +9,7 @@
     },
     {
         "name": "CSS, CSS3, SASS",
-        "rate": 4
+        "rate": 5
     },
     {
         "name": "HTML, HTML5",
@@ -25,7 +25,7 @@
     },
     {
         "name": "Webform",
-        "rate": 4
+        "rate": 5
     },
     {
         "name": "Elastic Search",
@@ -33,11 +33,11 @@
     },
     {
         "name": "C#",
-        "rate": 4
+        "rate": 5
     },
     {
         "name": "TypeScript, Javascript, JQuery",
-        "rate": 4
+        "rate": 5
     },
     {
         "name": "Oracle",
@@ -53,11 +53,11 @@
     },
     {
         "name": "ASP.NET, ASP.NET Core",
-        "rate": 4
+        "rate": 5
     },
     {
         "name": "VB6, VB.NET",
-        "rate": 4
+        "rate": 5
     },
     {
         "name": "UI/UX",
@@ -69,6 +69,14 @@
     },
     {
         "name": "Automation Test",
+        "rate": 4
+    },
+    {
+        "name": "Wordpress",
+        "rate": 3
+    },
+    {
+        "name": "SEO",
         "rate": 4
     }
 ]

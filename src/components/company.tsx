@@ -6,7 +6,7 @@ export default class Company extends React.Component<any> {
             <div className="card mb-3 border-0" data-aos="fade-up">
                 <div className="row no-gutters">
                     <div className="col-md-2 d-flex align-items-center">
-                        <img src={this.props.logo} className="object-fit-cover" width="100%" alt={this.props.name} />
+                        <img src={this.props.logo} className="object-fit-cover transition duration-700 hover:scale-125" width="100%" alt={this.props.name} />
                     </div>
                     <div className="col-md-10">
                         <div className="card-body">

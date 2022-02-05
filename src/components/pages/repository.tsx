@@ -16,7 +16,7 @@ export const Repository = () => {
         })
     }, [])
     return (
-        <div>
+        <div className="py-2">
             <h1 className="h2">My Repositories</h1>
             <div className="font-weight-bold mt-3">Showcase</div>
             <div className="mt-2 repository md:flex flex-wrap bg-gray-100 rounded p-2">
@@ -26,7 +26,7 @@ export const Repository = () => {
                             <div className="p-2 h-full">
                                 <div className="bg-white rounded p-4 h-full">
                                     <div className="font-bold mb-4 flex items-center">
-                                        <div className="flex-grow text-2xl"><a href={repository.html_url}>{repository.name}</a></div>
+                                        <div className="flex-grow text-lg md:text-2xl"><a href={repository.html_url} target="_blank" rel="noreferrer">{repository.name}</a></div>
                                         <div className="text-gray-500">
                                             <span className="mr-2">{repository.stargazers_count}<TiStarFullOutline /></span>
                                             <span>{repository.forks_count}<GoRepoForked /></span>
