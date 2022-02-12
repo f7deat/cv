@@ -6,8 +6,8 @@ import { Link } from 'react-router-dom';
 export default class Menu extends React.Component {
     render() {
         return (
-            <nav className="nav text-center justify-around md:justify-start">
-                <Link className="nav-link active" to="/">
+            <nav className="text-center justify-around md:justify-start">
+                <Link className="nav-link active text-blue-800" to="/">
                     <IconContext.Provider value={{ className: "icon-2x App-logo" }}>
                         <RiReactjsLine className="icon-2x" />
                     </IconContext.Provider>
@@ -26,7 +26,7 @@ type MenuItemProps = {
 }
 
 const MenuItem: React.FC<MenuItemProps> = (props) => (
-    <Link className="nav-link" to="/">
+    <Link className="nav-link hover:text-blue-800" to={props.url}>
         <IconContext.Provider value={{ className: "icon-2x" }}>
             {props.icon}
         </IconContext.Provider>

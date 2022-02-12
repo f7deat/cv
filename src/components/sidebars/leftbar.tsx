@@ -27,17 +27,17 @@ export default function LeftBar(props: any) {
     return (
         <div>
             <div className='mb-4 flex items-center justify-center'>
-                <div className="avatar rounded-circle bg-gray-800 cursor-move">
-                    <img src={user?.avatar_url} alt="avatar" className="object-fit-cover rounded-circle shadow hover:opacity-75 duration-500 transition" width="200" height="200" />
+                <div className="avatar rounded-full bg-gray-800">
+                    <img src={user?.avatar_url} alt="avatar" className="object-fit-cover rounded-full shadow hover:opacity-75 duration-500 transition" width="200" height="200" />
                 </div>
             </div>
-            <div className="p-2 text-center justify-items-center">
-                <a href="https://github.com/f7deat" className="mr-2">
+            <div className="p-2 text-center flex justify-center gap-4">
+                <a href="https://github.com/f7deat">
                     <IconContext.Provider value={{ className: "icon-2x" }}>
                         <AiFillGithub />
                     </IconContext.Provider>
                 </a>
-                <a href="https://www.linkedin.com/in/f7deat/" className="mr-2">
+                <a href="https://www.linkedin.com/in/f7deat/">
                     <IconContext.Provider value={{ className: "icon-2x" }}>
                         <AiFillLinkedin />
                     </IconContext.Provider>

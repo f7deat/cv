@@ -13,7 +13,7 @@ function App() {
 
   return (
     <HashRouter>
-        <div className="bg-light menu">
+        <div className="bg-slate-100 menu">
           <Menu />
         </div>
         <div className="sidebar border-r">

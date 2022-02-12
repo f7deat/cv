@@ -29,8 +29,8 @@ export default class Navbar extends React.Component<any, INavBarState> {
         return (
             <header className="flex border-b justify-between">
                 <div>
-                    <button className="h-16 w-20 hover:text-blue-500 flex justify-center items-center">
-                        <Link to="/">
+                    <button className="h-16 w-20 flex justify-center items-center">
+                        <Link to="/" className=' hover:text-blue-800'>
                             <IconContext.Provider value={{ className: "icon-1r" }}>
                                 <RiHomeLine />
                             </IconContext.Provider>
@@ -39,7 +39,7 @@ export default class Navbar extends React.Component<any, INavBarState> {
                 </div>
                 <div className='flex-grow flex justify-end'>
                     <div className="hidden md:block w-full border-l border-r px-4">
-                        <div className="d-flex h-100">
+                        <div className="items-center flex h-full gap-2">
                             <IconContext.Provider value={{ className: "h-100 text-muted" }}>
                                 <RiSearchLine />
                             </IconContext.Provider>

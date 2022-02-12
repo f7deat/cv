@@ -11,11 +11,11 @@ export default class Skill extends React.Component {
                     skills.map((value, index) => (
                         <div className="md:w-1/2" key={index}>
                             <div className='px-4 py-2 flex items-center justify-between'>
-                                <div className="font-weight-bold">
+                                <div className="font-bold">
                                     {value.name}
                                 </div>
-                                <div>
-                                    <IconContext.Provider value={{ className: "text-warning mb-1" }}>
+                                <div className='flex items-center gap-2'>
+                                    <IconContext.Provider value={{ className: "text-yellow-500 mb-1" }}>
                                         {value.rate} <RiStarLine />
                                     </IconContext.Provider>
                                 </div>

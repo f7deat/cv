@@ -18,21 +18,33 @@ export default class RightBar extends React.Component {
     render() {
         return (
             <div className="collapsed">
-                <Overall title="Bio" Component={<Bio />} icon={<RiUserHeartLine />} isShow={true} id="collapseBio" />
+                <Overall title="Bio" icon={<RiUserHeartLine />} visible={true}>
+                    <Bio />
+                </Overall>
                 <div className="mt-4">
-                    <Overall title="Developer Highlights" Component={<DeveloperHighlights />} icon={<RiCodeSSlashLine />} isShow={false} id="collapseHighlights" />
+                    <Overall title="Developer Highlights" icon={<RiCodeSSlashLine />} visible={false}>
+                        <DeveloperHighlights />
+                    </Overall>
                 </div>
                 <div className="mt-4">
-                    <Overall title="Overall Thoughts" Component={<OverallThoughts />} icon={<RiChat3Line />} isShow={false} id="collapseOverallThoughts" />
+                    <Overall title="Overall Thoughts" icon={<RiChat3Line />} visible={false} >
+                        <OverallThoughts />
+                    </Overall>
                 </div>
                 <div className="mt-4">
-                    <Overall title="Overall Experience" Component={<OverallExperience />} icon={<RiMedal2Line />} isShow={false} id="collapseOverallExperience" />
+                    <Overall title="Overall Experience" icon={<RiMedal2Line />} visible={false} >
+                        <OverallExperience />
+                    </Overall>
                 </div>
                 <div className="mt-4">
-                    <Overall title="Notes" Component={<Notes />} icon={<RiStickyNote2Line />} isShow={false} id="collapseNotes" />
+                    <Overall title="Notes" icon={<RiStickyNote2Line />} visible={false}>
+                        <Notes />
+                    </Overall>
                 </div>
                 <div className="mt-4">
-                    <Overall title="Favorite" Component={<Favorite/>} icon={<FaViadeo />} isShow={false} id="collapseFavorite" />
+                    <Overall title="Favorite" icon={<FaViadeo />} visible={false}>
+                        <Favorite />
+                    </Overall>
                 </div>
             </div>
         )

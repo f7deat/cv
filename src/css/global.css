@@ -7,9 +7,6 @@ body {
 a, .btn-link {
   color: var(--dark);
 }
-svg {
-    display: unset;
-}
 .icon-2x {
     font-size: 2rem;
 }
