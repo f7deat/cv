@@ -9,7 +9,7 @@ export default class MyApplication extends React.Component {
                 <div>
                     You can see my all project created by me on <a href="https://github.com/f7deat">GITHUB <RiExternalLinkLine/></a> <i>(exclude private :D)</i>
                 </div>
-                <div className="font-weight-bold mt-3">Live project</div>
+                <div className="font-bold mt-3">Live project</div>
                 <div className="mt-2">
                     <ul>
                         <li><b><a href="https://defzone.net">DefZone.Net</a></b>: <span className="text-muted">My Primary Blog. Source: .Net core</span></li>

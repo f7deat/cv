@@ -1,11 +1,11 @@
 [
     {
         "name": "ReactJs",
-        "rate": 4
+        "rate": 5
     },
     {
         "name": "VueJs",
-        "rate": 2
+        "rate": 3
     },
     {
         "name": "CSS, CSS3, SASS",
@@ -21,7 +21,7 @@
     },
     {
         "name": "Angular",
-        "rate": 3
+        "rate": 4
     },
     {
         "name": "Webform",
@@ -77,6 +77,22 @@
     },
     {
         "name": "SEO",
+        "rate": 4
+    },
+    {
+        "name": "EPIServer",
+        "rate": 4
+    },
+    {
+        "name": "Azure",
+        "rate": 3
+    },
+    {
+        "name": "Flutter",
+        "rate": 3   
+    },
+    {
+        "name": "Pug",
         "rate": 4
     }
 ]

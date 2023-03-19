@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 export default class Menu extends React.Component {
     render() {
         return (
-            <nav className="text-center justify-around md:justify-start">
+            <nav className="text-center justify-around md:justify-start flex md:flex-col">
                 <Link className="nav-link active text-blue-800" to="/">
                     <IconContext.Provider value={{ className: "icon-2x App-logo" }}>
                         <RiReactjsLine className="icon-2x" />

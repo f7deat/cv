@@ -18,7 +18,7 @@ export const Repository = () => {
     return (
         <div className="py-2">
             <h1 className="h2">My Repositories</h1>
-            <div className="font-weight-bold mt-3">Showcase</div>
+            <div className="font-bold mt-3">Showcase</div>
             <div className="mt-2 repository md:flex flex-wrap bg-gray-100 rounded p-2 mb-4">
                 {
                     repositories?.map(repository => (

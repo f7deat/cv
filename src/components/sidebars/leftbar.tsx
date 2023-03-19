@@ -49,7 +49,9 @@ export default function LeftBar(props: any) {
                 </a>
             </div>
             <div className="p-2 text-center">
-                <h1 className="h4 font-weight-bold"><Texty>{user?.name}</Texty></h1>
+                <h1 className="font-bold text-3xl mb-3">
+                    <Texty>{user?.name}</Texty>
+                </h1>
                 <div className='flex justify-center gap-3'>
                     <div className='flex items-center gap-1'>
                         <span className='font-medium'>
@@ -97,19 +99,19 @@ export default function LeftBar(props: any) {
                 <div className="text-muted mt-2">
                     Email
                 </div>
-                <div className="font-weight-bold">
+                <div className="font-bold">
                     <a href="mailto:f7deat@gmail.com">f7deat@gmail.com</a>
                 </div>
                 <div className="text-muted mt-3">
                     Phone
                 </div>
-                <div className="font-weight-bold">
+                <div className="font-bold">
                     <a href="telto:84762559696">(+84) 762.559.696</a>
                 </div>
                 <div className="text-muted mt-3">
                     Date Of Birth
                 </div>
-                <div className="font-weight-bold">
+                <div className="font-bold">
                     November 20, 1996
                 </div>
             </div>
