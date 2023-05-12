@@ -6,8 +6,8 @@ import RightBar from './components/sidebars/rightbar';
 import LeftBar from './components/sidebars/leftbar';
 import Content from './components/content';
 import { HashRouter, Switch, Route } from 'react-router-dom';
-import MyTask from './components/mytask';
 import { Repository } from './pages/repositories';
+import MyTask from './pages/task';
 
 function App() {
 

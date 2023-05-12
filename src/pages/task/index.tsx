@@ -1,10 +1,11 @@
 import React from 'react';
+import { Title } from '../../components/typography';
 
 export default class MyTask extends React.Component {
     render() {
         return (
             <div>
-                <h1 className="h2">My Tasks</h1>
+                <Title>My Tasks</Title>
                 <h2 className="h4 font-bold mt-4">FPT Software</h2>
                 <div className="py-2 border-bottom-dashed">
                     <div className="font-bold">CEC-MUL</div>
@@ -36,7 +37,7 @@ export default class MyTask extends React.Component {
                     <div>
                         Description: <span className="text-muted">Fix bug from special data taken from existing Crawl Data tool</span><br/>
                         Technical: <span className="text-muted">NodeJs, cheerio</span><br/>
-                        Team Size: <span className="text-muted">just me</span>
+                        Team Size: <span className="text-muted">1</span>
                     </div>
                 </div>
                 <div className="py-2 border-bottom-dashed">
@@ -44,7 +45,7 @@ export default class MyTask extends React.Component {
                     <div>
                         Description: <span className="text-muted">Create Monitoring server for CMS Lotus</span><br/>
                         Technical: <span className="text-muted">AppMetrics, Prometheus, Grafana</span><br/>
-                        Team Size: <span className="text-muted">just me and a lot of helper from my leader</span>
+                        Team Size: <span className="text-muted">1</span>
                     </div>
                 </div>
                 <h2 className="h4 font-bold mt-4">Novaon</h2>
