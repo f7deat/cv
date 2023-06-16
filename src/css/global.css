@@ -1,37 +1,49 @@
-
 :root {
     --dark: #172b4d
 }
-a, .btn-link {
-  color: var(--dark);
+
+a,
+.btn-link {
+    color: var(--dark);
 }
+
 .icon-2x {
     font-size: 2rem;
 }
+
 .object-fit-cover {
     object-fit: cover;
 }
+
 .icon-1r {
     font-size: 1.5rem;
 }
+
 .hoverable {
     cursor: pointer;
 }
-.hoverable:hover, .toggle-persional-info:hover {
+
+.hoverable:hover,
+.toggle-persional-info:hover {
     color: darkblue;
 }
+
 .border-bottom-dashed {
     border-bottom: 1px dashed #d1d1d1;
 }
+
 .dark-theme {
     filter: invert(1) hue-rotate(180deg);
 }
+
 .dark-theme img {
     filter: invert(1) hue-rotate(180deg);
 }
+
 .btn:focus {
     box-shadow: none;
 }
+
 .toggle-persional-info {
     position: absolute;
     right: 0;
@@ -41,4 +53,18 @@ a, .btn-link {
     background: white;
     padding-bottom: 0.5rem;
     cursor: pointer;
+}
+
+.skeleton {
+    animation: skeleton-loading 1s linear infinite alternate;
+}
+
+@keyframes skeleton-loading {
+    0% {
+        background-color: hsl(200, 20%, 80%);
+    }
+
+    100% {
+        background-color: hsl(200, 20%, 95%);
+    }
 }

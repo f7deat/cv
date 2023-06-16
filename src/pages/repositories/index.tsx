@@ -9,20 +9,22 @@ import '../../css/repositories.css';
 export const Repository = () => {
 
     const [repositories, setRepositories] = useState<IRepository[]>();
+    const [loading, setLoading] = useState<boolean>(true);
 
     useEffect(() => {
         axios.get(`https://api.github.com/users/f7deat/repos`).then(response => {
-            setRepositories(response.data)
+            setRepositories(response.data);
+            setLoading(false);
         })
     }, [])
     return (
         <div className="py-2">
             <h1 className="h2">My Repositories</h1>
             <div className="font-bold mt-3">Showcase</div>
-            <div className="mt-2 repository md:flex flex-wrap bg-gray-100 rounded p-2 mb-4">
+            <div className="mt-2 repository grid md:grid-cols-2 gap-4 bg-gray-100 rounded p-2 mb-4">
                 {
                     repositories?.map(repository => (
-                        <div className="mb-2 md:w-1/2" key={repository.id}>
+                        <div key={repository.id}>
                             <div className="p-2 h-full">
                                 <div className="bg-white rounded p-4 h-full">
                                     <div className="font-bold mb-4 flex items-center">
@@ -44,7 +46,6 @@ export const Repository = () => {
                     ))
                 }
             </div>
-            <h1 className="h2">My Portfolio</h1>
         </div>
     )
 }
