@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { AiFillGithub, AiFillLinkedin, AiFillTwitterCircle } from "react-icons/ai";
-import { HiOutlineLocationMarker, HiPencilAlt } from "react-icons/hi";
 import { RiUserFollowLine } from "react-icons/ri";
-import { BiGitRepoForked } from "react-icons/bi";
 import { IconContext } from "react-icons";
 import axios from 'axios';
 import { User } from '../../interfaces/user';
@@ -10,6 +8,7 @@ import SvgMorphPlugin from 'rc-tween-one/lib/plugin/SvgMorphPlugin';
 import TweenOne from 'rc-tween-one';
 import Texty from 'rc-texty';
 import Children from 'rc-tween-one/lib/plugin/ChildrenPlugin';
+import { GoLocation, GoPencil, GoRepoForked } from 'react-icons/go';
 
 TweenOne.plugins.push(Children);
 
@@ -28,22 +27,22 @@ export default function LeftBar(props: any) {
         <div>
             <div className='mb-4 flex items-center justify-center'>
                 <div className="avatar rounded-full bg-gray-800">
-                    <img src={user?.avatar_url} alt="avatar" className="object-fit-cover rounded-full shadow hover:opacity-75 duration-500 transition" width="200" height="200" />
+                    <img src={user?.avatar_url} alt="avatar" className="object-fit-cover rounded-full shadow transform transition duration-500 hover:scale-110" width="200" height="200" />
                 </div>
             </div>
             <div className="p-2 text-center flex justify-center gap-4">
                 <a href="https://github.com/f7deat">
-                    <IconContext.Provider value={{ className: "icon-2x" }}>
+                    <IconContext.Provider value={{ className: "icon-2x transform transition duration-500 hover:scale-110" }}>
                         <AiFillGithub />
                     </IconContext.Provider>
                 </a>
                 <a href="https://www.linkedin.com/in/f7deat/">
-                    <IconContext.Provider value={{ className: "icon-2x" }}>
+                    <IconContext.Provider value={{ className: "icon-2x text-blue-900 transform transition duration-500 hover:scale-110" }}>
                         <AiFillLinkedin />
                     </IconContext.Provider>
                 </a>
                 <a href={`https://twitter.com/${user?.twitter_username}`} target="_blank" rel="noopener noreferrer">
-                    <IconContext.Provider value={{ className: "icon-2x twitter-color" }}>
+                    <IconContext.Provider value={{ className: "icon-2x text-sky-500 transform transition duration-500 hover:scale-110" }}>
                         <AiFillTwitterCircle />
                     </IconContext.Provider>
                 </a>
@@ -75,7 +74,7 @@ export default function LeftBar(props: any) {
                                 }
                             }}></TweenOne>
                         </span>
-                        <BiGitRepoForked />
+                        <GoRepoForked />
                     </div>
                     <div className='flex items-center gap-1'>
                         <span className='font-medium'>
@@ -87,11 +86,11 @@ export default function LeftBar(props: any) {
                                 }
                             }}></TweenOne>
                         </span>
-                        <HiPencilAlt />
+                        <GoPencil />
                     </div>
                 </div>
                 <div className="text-gray-500 flex gap-1 items-center justify-center">
-                    <HiOutlineLocationMarker />
+                    <GoLocation />
                     {user?.location}
                 </div>
             </div>

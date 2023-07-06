@@ -12,14 +12,20 @@ const Technologies: React.FC<TechnologiesType> = (props) => {
         if (['VB.NET'].includes(value)) {
             return 'bg-sky-700';
         }
-        if (['C#'].includes(value)) {
+        if (['C#', 'Bootstrap'].includes(value)) {
             return 'bg-violet-700';
         }
         if (['Angular', 'AngularJs'].includes(value)) {
             return 'bg-red-600';
         }
-        if (['VueJs'].includes(value)) {
+        if (['VueJs', 'Selelium'].includes(value)) {
             return 'bg-green-600';
+        }
+        if (['Javascript'].includes(value)) {
+            return 'bg-orange-600'
+        }
+        if (['SQL Server'].includes(value)) {
+            return 'bg-yellow-600';
         }
         return 'bg-gray-800';
     }

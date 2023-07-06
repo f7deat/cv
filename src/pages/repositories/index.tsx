@@ -9,12 +9,10 @@ import '../../css/repositories.css';
 export const Repository = () => {
 
     const [repositories, setRepositories] = useState<IRepository[]>();
-    const [loading, setLoading] = useState<boolean>(true);
 
     useEffect(() => {
         axios.get(`https://api.github.com/users/f7deat/repos`).then(response => {
             setRepositories(response.data);
-            setLoading(false);
         })
     }, [])
     return (

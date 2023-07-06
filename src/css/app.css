@@ -52,10 +52,6 @@ input[type=number]:focus,
   color: #61dafb;
 }
 
-.twitter-color {
-  color: rgba(29,161,242,1.00);
-}
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
