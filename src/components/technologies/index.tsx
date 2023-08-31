@@ -21,11 +21,14 @@ const Technologies: React.FC<TechnologiesType> = (props) => {
         if (['VueJs', 'Selelium'].includes(value)) {
             return 'bg-green-600';
         }
-        if (['Javascript'].includes(value)) {
+        if (['JavaScript', 'HTML'].includes(value)) {
             return 'bg-orange-600'
         }
         if (['SQL Server'].includes(value)) {
             return 'bg-yellow-600';
+        }
+        if (['TypeScript', 'CSS'].includes(value)) {
+            return 'bg-blue-600';
         }
         return 'bg-gray-800';
     }

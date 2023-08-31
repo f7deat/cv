@@ -89,7 +89,7 @@ export default class MyTask extends React.Component {
                         <div className="font-bold">VNPT Portal</div>
                         <div>
                             Description: <span className="text-muted"><a href='https://vnptweb.vn' target="_blank" rel="noreferrer" className='text-blue-800 font-medium'>VNPT Portal</a> is a solution that allows Government agencies to create a single online focal point for all subjects</span><br />
-                            <Technologies data={['Webform', 'Javascript', 'Jquery', 'SqlServer', 'Selelium', 'Telerik']} />
+                            <Technologies data={['Webform', 'JavaScript', 'Jquery', 'SqlServer', 'Selelium', 'Telerik']} />
                             Besponsile for: <span className="text-muted">Fullstack Developer</span><br />
                             Team Size: <span className="text-muted">5</span>
                         </div>

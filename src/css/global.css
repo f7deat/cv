@@ -2,8 +2,11 @@
     --dark: #172b4d
 }
 
-a,
-.btn-link {
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+a, .btn-link {
     color: var(--dark);
 }
 
